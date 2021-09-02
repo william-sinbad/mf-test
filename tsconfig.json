@@ -1,0 +1,17 @@
+{
+  "extends": "ts-config-single-spa",
+  "compilerOptions": {
+    "paths": {
+      "@home/application/*": ["./src/pages/home/application/*"],
+      "@home/style/*": ["./src/pages/home/assets/styles/*"],
+      "@home/entity/*": ["./src/pages/home/domain/entity/*"],
+      "@home/repository/*": ["./src/pages/home/domain/repository/*"],
+      "@home/infrastructure/*": ["./src/pages/home/infrastructure/*"],
+      "@redux-store/*": ["./src/store/*"]
+    },
+    "jsx": "react-jsx",
+    "typeRoots": ["node_modules/@types", "node_modules/@sinbad/mf-types"]
+  },
+  "include": ["src/**/*", "node_modules/@types"],
+  "exclude": ["src/**/*.test*"]
+}
